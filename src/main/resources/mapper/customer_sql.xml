@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 设置为UserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.springmvc.dao.customerDAO">
+
+    <insert id="insertCust" parameterType="Customer">
+        INSERT INTO customer(cust_id,cust_name,cust_phone,password,nick_name)
+        VALUES(#{customer.custId},#{customer.realName},#{customer.phone},#{customer.password},#{customer.nickName})
+    </insert>
+
+    <update id="updateCust" parameterType="Customer">
+        UPDATE customer
+        <set>
+            cust_phone = #{customer_1.phone}
+
+        </set>
+        where cust_id=#{userinfo_1.custId}
+    </update>
+
+    <select id="selectCustById" resultType="Customer" parameterType="int">
+        SELECT * FROM costomer WHERE cust_id = #{custId}
+    </select>
+</mapper>
