@@ -5,14 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
     <title>Book Store</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-
+    <!-- 页面跳转以及需要的js文件-->
     <script type="text/javascript">baselocation="${ctx}"</script>
-
+    <script src="../../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../js/systemJS/login.js"></script>
 </head>
 <body>
 <div id="wrap">
     <div class="header">
-        <div class="logo"><a href="index.htm"><img src="../../images/logo.gif" alt="" title="" border="0" /></a></div>
+        <div class="logo"><img src="../../images/logo.gif" alt="" title="" border="0" /></div>
         <div id="menu">
             <ul>
                 <li class="selected"><a href="login.html">Login</a></li>
@@ -38,12 +39,12 @@
                         </div>
 
                         <div class="form_row">
-                            <input type="submit" class="register" value="login" />
+                            <button type="button" id="btn_login">login</button>
                         </div>
                     </form>
 
-                    <div ><a href="register.html">I don't have account >>></a></div>
-                    <div><a href="home.html">go to home</a></div>
+                    <div ><a id="a_gotoRegister">I don't have account</a></div>
+                    <div><a id="a_gotoHome">go to home</a></div>
                     </br> </br></br></br></br></br></br></br></br></br></br></br>
                 </div>
             </div>

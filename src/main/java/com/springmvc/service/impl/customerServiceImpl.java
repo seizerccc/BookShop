@@ -26,7 +26,8 @@ public class customerServiceImpl implements customerService {
         customerDao.updateCust(customer);
     }
 
-    public Customer selectCustById(int id){
-        return customerDao.selectCustById(id);
+    public Customer selectCustByName(String name) {
+        Customer cc = customerDao.selectCustByName(name);
+        return cc;
     }
 }

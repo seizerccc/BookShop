@@ -15,5 +15,5 @@ public interface customerService {
     void updateCust(Customer customer);
 
     //根据昵称获取用户信息
-    Customer selectCustById(int id);
+    Customer selectCustByName(String name);
 }

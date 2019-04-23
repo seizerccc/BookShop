@@ -14,5 +14,5 @@ public interface customerDAO {
     void updateCust(@Param("customer_1")Customer customer);
 
     //根据昵称获取用户信息
-    Customer selectCustById(int id);
+    Customer selectCustByName(String name);
 }

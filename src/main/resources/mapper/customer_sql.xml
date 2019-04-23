@@ -6,19 +6,19 @@
 
     <insert id="insertCust" parameterType="Customer">
         INSERT INTO customer(cust_id,cust_name,cust_phone,password,nick_name)
-        VALUES(#{customer.custId},#{customer.realName},#{customer.phone},#{customer.password},#{customer.nickName})
+        VALUES(#{customer.cust_id},#{customer.cust_name},#{customer.cust_phone},#{customer.password},#{customer.nick_name})
     </insert>
 
     <update id="updateCust" parameterType="Customer">
         UPDATE customer
         <set>
-            cust_phone = #{customer_1.phone}
+            cust_phone = #{customer_1.cust_phone}
 
         </set>
-        where cust_id=#{userinfo_1.custId}
+        where cust_id=#{userinfo_1.cust_id}
     </update>
 
-    <select id="selectCustById" resultType="Customer" parameterType="int">
-        SELECT * FROM costomer WHERE cust_id = #{custId}
+    <select id="selectCustByName" resultType="Customer" parameterType="String">
+        SELECT * FROM customer WHERE nick_name = #{nick_name}
     </select>
 </mapper>
