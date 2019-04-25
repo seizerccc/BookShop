@@ -46,9 +46,9 @@ public class RegisterController {
         }
         else{
             Customer newCust = new Customer();
-            newCust.setCustId(id);
-            newCust.setRealName(realname);
-            newCust.setNickName(nickname);
+            newCust.setCustid(id);
+            newCust.setCustname(realname);
+            newCust.setNickname(nickname);
             newCust.setPhone(phone);
             newCust.setPassword(password);
             try{

@@ -18,6 +18,6 @@ public class AccountController {
 
     @GetMapping(value = "/account")
     public String accountpage(Model model) {
-        return "account";
+        return "/account";
     }
 }

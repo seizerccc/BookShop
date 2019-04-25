@@ -1,30 +1,37 @@
 package com.springmvc.entity;
 
 public class Customer {
-    private int cust_id;
-    private String cust_name;
-    private String nick_name;
-    private String cust_phone;
+    private int custid;
+    private String custname;
+    private String nickname;
+    private String custphone;
     private String password;
 
-    public int getCustId() { return cust_id; }
+    /*
+    重点！！！
+    对于属性名，要和sql里面的属性名一致
+    然后get和set方法只能改变属性名的第一个字母为大写
+    如nickname--->getNickname  而不是getNickName
+     */
 
-    public String getRealName() { return cust_name; }
+    public int getCustid() { return this.custid; }
 
-    public String getNickName() { return nick_name; }
+    public String getCustname() { return this.custname; }
 
-    public String getPhone() {return cust_phone; }
+    public String getNickname() { return this.nickname; }
 
-    public String getPassword() {return password;  }
+    public String getPhone() {return this.custphone; }
+
+    public String getPassword() {return this.password;  }
 
 
-    public void setCustId(int custId) {this.cust_id = custId;}
+    public void setCustid(int custId) {this.custid = custId;}
 
-    public void setRealName(String realName) { this.cust_name = realName;  }
+    public void setCustname(String realName) { this.custname = realName;  }
 
-    public void setNickName(String nickName) {this.nick_name = nickName; }
+    public void setNickname(String nickName) {this.nickname = nickName; }
 
-    public void setPhone(String phone) {  this.cust_phone = phone; }
+    public void setPhone(String phone) {  this.custphone = phone; }
 
     public void setPassword(String password) { this.password = password; }
 }
