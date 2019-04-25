@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/base.jsp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
@@ -7,48 +9,54 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
     <!-- 页面跳转以及需要的js文件-->
     <script type="text/javascript">baselocation="${ctx}"</script>
-    <script src="../../js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="../../js/systemJS/login.js"></script>
+    <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../js/systemJS/register.js"></script>
 </head>
 <body>
 <div id="wrap">
     <div class="header">
-        <div class="logo"><img src="../../images/logo.gif" alt="" title="" border="0" /></div>
+        <div class="logo"><a ><img src="../../images/logo.gif" alt="" title="" border="0" /></a></div>
         <div id="menu">
             <ul>
-                <li class="selected"><a href="login.html">Login</a></li>
-
+                <li><a id="a_goLogin">Login</a></li>
+                <li class="selected"><a id="a_goRegister">Register</a></li>
             </ul>
         </div>
     </div>
     <div class="center_content">
         <div class="left_content">
-            <div class="title"><span class="title_icon"><img src="../../images/bullet1.gif" alt="" title="" /></span>Login</div>
+            <div class="title"><span class="title_icon"><img src="../../images/bullet1.gif" alt="" title="" /></span>Register</div>
             <div class="feat_prod_box_details">
-                <p class="details">Welcome to our online book market, please login first!</p>
+                <p class="details">You can create a new account with your information here.<br/><b>Make sure your information is true and confirmed because once being saved, it can not be changed!</b></p>
                 <div class="contact_form">
-                    <div class="form_subtitle">Type in your informatino here</div>
+                    <div class="form_subtitle">create new account</div>
                     <form name="register" action="#">
                         <div class="form_row">
+                            <label class="contact"><strong>Realname:</strong></label>
+                            <input type="text" id="realname" class="contact_input" />
+                        </div>
+                        <div class="form_row">
                             <label class="contact"><strong>Nickname:</strong></label>
-                            <input type="text" class="contact_input" id="nickname"/>
+                            <input type="text" id="nickname" class="contact_input" />
                         </div>
                         <div class="form_row">
                             <label class="contact"><strong>Password:</strong></label>
-                            <input type="password" class="contact_input"id="password" />
+                            <input type="password" id="password" class="contact_input" />
+                        </div>
+                        <div class="form_row">
+                            <label class="contact"><strong>Phone:</strong></label>
+                            <input type="text" id="phone" class="contact_input" />
                         </div>
 
                         <div class="form_row">
-                            <input type="button" id="btn_login" class="register" value="login"/>
+                            <input type="button" id="btn_register" class="register" value="register" />
                         </div>
                     </form>
-
-                    <div ><a id="a_gotoRegister">I don't have account</a></div>
-                    <div><a id="a_gotoHome">go to home</a></div>
-                    </br> </br></br></br></br></br></br></br></br></br></br></br>
                 </div>
+
             </div>
             <div class="clear"></div>
+            <br/><br/><br/><br/><br/><br/><br/>
         </div>
         <!--end of left content-->
         <div class="right_content">
@@ -69,4 +77,12 @@
 </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
 

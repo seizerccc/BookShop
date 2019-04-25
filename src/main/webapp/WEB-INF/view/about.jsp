@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/base.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
@@ -9,7 +10,7 @@
     <!-- 页面跳转以及需要的js文件-->
     <script type="text/javascript">baselocation="${ctx}"</script>
     <script src="../../js/jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="../../js/systemJS/home.js"></script>
+    <script type="text/javascript" src="../../js/systemJS/about.js"></script>
     <script type="text/javascript" src="../../js/systemJS/links.js"></script>
 </head>
 <body>
@@ -18,8 +19,8 @@
         <div class="logo"><a id="a_homelogo"><img src="../../images/logo.gif" alt="" title="" border="0" /></a></div>
         <div id="menu">
             <ul>
-                <li class="selected"><a id="a_goHome">Home</a></li>
-                <li><a id="a_goAbout">About us</a></li>
+                <li ><a id="a_goHome">Home</a></li>
+                <li class="selected"><a id="a_goAbout">About us</a></li>
                 <li><a id="a_goBooks">Books</a></li>
                 <li><a id="a_goAccount">Account</a></li>
                 <li><a id="a_goCart">Cart</a></li>
@@ -28,46 +29,13 @@
     </div>
     <div class="center_content">
         <div class="left_content">
-            <div class="title"><span class="title_icon"><img src="../../images/bullet1.gif" alt="" title="" /></span>Featured books</div>
-            <div class="feat_prod_box">
-                <div class="prod_img"><a href="details.html"><img src="../../images/prod1.gif" alt="" title="" border="0" /></a></div>
-                <div class="prod_det_box">
-                    <div class="box_top"></div>
-                    <div class="box_center">
-                        <div class="prod_title">Product name</div>
-                        <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                        <a href="details.html" class="more">- more details -</a>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="box_bottom"></div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="feat_prod_box">
-                <div class="prod_img"><a href="details.html"><img src="../../images/prod2.gif" alt="" title="" border="0" /></a></div>
-                <div class="prod_det_box">
-                    <div class="box_top"></div>
-                    <div class="box_center">
-                        <div class="prod_title">Product name</div>
-                        <p class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                        <a href="details.html" class="more">- more details -</a>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="box_bottom"></div>
-                </div>
-                <div class="clear"></div>
-            </div>
-            <div class="title"><span class="title_icon"><img src="../../images/bullet2.gif" alt="" title="" /></span>New books</div>
-            <div class="new_products">
-                <div class="new_prod_box"> <a href="details.htm">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="details.htm"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
-                </div>
-                <div class="new_prod_box"> <a href="details.htm">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="details.htm"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
-                </div>
-                <div class="new_prod_box"> <a href="details.htm">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="details.htm"><img src="../../images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a> </div>
-                </div>
+            <div class="title"><span class="title_icon"><img src="../../images/bullet1.gif" alt="" title="" /></span>About us</div>
+            <div class="feat_prod_box_details">
+                <p class="details"> <img src="../../images/about.gif" alt="" title="" class="right" /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. <br />
+                    <br />
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.<br />
+                    <br />
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
             </div>
             <div class="clear"></div>
         </div>
@@ -112,7 +80,7 @@
     </div>
     <!--end of center content-->
     <div class="footer">
-        <div class="left_footer"><img src="../../images/footer_logo.gif" alt="" title="" /><br />
+        <div class="left_footer"><img src="../../images/footer_logo.gif" alt="" title=""/></br>
 
         </div>
     </div>
