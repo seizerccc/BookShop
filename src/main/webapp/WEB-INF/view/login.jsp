@@ -20,7 +20,7 @@
         <div class="logo"><img src="../../images/logo.gif" alt="" title="" border="0" /></div>
         <div id="menu">
             <ul>
-                <li class="selected"><a href="login.html">Login</a></li>
+                <li class="selected"><a href="#">Login</a></li>
 
             </ul>
         </div>
@@ -48,8 +48,7 @@
                     </form>
 
                     <div ><a id="a_gotoRegister">I don't have account</a></div>
-                    <div><a id="a_gotoHome">go to home</a></div>
-                    </br> </br></br></br></br></br></br></br></br></br></br></br>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
             </div>
             <div class="clear"></div>

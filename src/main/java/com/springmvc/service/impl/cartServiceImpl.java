@@ -1,6 +1,7 @@
 package com.springmvc.service.impl;
 
 import com.springmvc.dao.cartDAO;
+import com.springmvc.entity.Book;
 import com.springmvc.entity.Cartitem;
 import com.springmvc.service.cartService;
 import org.apache.ibatis.annotations.MapKey;
@@ -23,6 +24,11 @@ public class cartServiceImpl implements cartService {
     public List<Cartitem> getCartById(int id){
         List<Cartitem> cart = cartDao.getCartById(id);
         return cart;
+    }
+
+    public void insertToCart(Book book)
+    {
+        cartDao.insertToCart(book);
     }
 
 }

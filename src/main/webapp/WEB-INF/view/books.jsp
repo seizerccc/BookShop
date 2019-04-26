@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
     <!-- 页面跳转以及需要的js文件-->
     <script type="text/javascript">baselocation="${ctx}"</script>
-    <script src="../../js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="../../js/systemJS/books.js"></script>
     <script type="text/javascript" src="../../js/systemJS/links.js"></script>
 </head>
@@ -26,48 +26,52 @@
                 <li class="selected"><a id="a_goBooks">Books</a></li>
                 <li><a id="a_goAccount">Account</a></li>
                 <li><a id="a_goCart">Cart</a></li>
+                <li><a id="a_godetail">Detail</a></li>
             </ul>
         </div>
     </div>
     <div class="center_content">
         <div class="left_content">
-            <div class="crumb_nav"> <a href="home.html">home</a> &gt;&gt; category name </div>
+            <div class="crumb_nav"> <a href="#">home</a> &gt;&gt; category name </div>
             <div class="title"><span class="title_icon"><img src="../../images/bullet1.gif" alt="" title="" /></span>Category books</div>
             <div class="new_products">
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <a href="details.html"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <a id="#"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook1">book1</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="#"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook2">book2</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="#"><img src="../../images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook3">book3</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <a href="details.html"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <a href="#"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook4">book4</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="#"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook5">book5</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <a href="details.html"><img src="../../images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <a href="#"><img src="../../images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook6">book6</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="#"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook7">book7</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <a href="details.html"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box">
+                    <div class="new_prod_bg"> <a href="#"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                    <a id="a_gobook8">book8</a>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <a href="details.html"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
-                </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/new_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
-                </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <a href="details.html"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
-                </div>
+                <!--翻页还没实现
                 <div class="pagination"> <span class="disabled"><<</span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a>…<a href="#?page=199">10</a><a href="#?page=200">11</a><a href="#?page=2">>></a> </div>
+                -->
             </div>
             <div class="clear"></div>
         </div>
@@ -76,7 +80,7 @@
             <div class="cart">
                 <div class="title"><span class="title_icon"><img src="../../images/cart.gif" alt="" title="" /></span>My cart</div>
                 <div class="home_cart_content">
-                    3 x items | <span class="red">TOTAL: 100$</span>
+                    3 x items | <span class="red">TOTAL: 57$</span>
                     <a id="a_goCart2">view cart</a>
                 </div>
             </div>
@@ -86,14 +90,14 @@
             </div>
             <div class="right_box">
                 <div class="title"><span class="title_icon"><img src="../../images/bullet4.gif" alt="" title="" /></span>Promotions</div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box"> <a href="#">product name</a>
+                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="#"><img src="../../images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a> </div>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box"> <a href="#">product name</a>
+                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="#"><img src="../../images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a> </div>
                 </div>
-                <div class="new_prod_box"> <a href="details.html">product name</a>
-                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="details.html"><img src="../../images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a> </div>
+                <div class="new_prod_box"> <a href="#">product name</a>
+                    <div class="new_prod_bg"> <span class="new_icon"><img src="../../images/promo_icon.gif" alt="" title="" /></span> <a href="#"><img src="../../images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a> </div>
                 </div>
             </div>
             <div class="right_box">

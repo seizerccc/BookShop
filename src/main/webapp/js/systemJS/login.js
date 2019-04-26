@@ -46,9 +46,3 @@ $(function() {
         window.location.href = baselocation + "/register";
     })
 });
-
-$(function() {
-    $('#a_gotoHome').click(function() {
-        window.location.href = baselocation + "/home";
-    })
-});
